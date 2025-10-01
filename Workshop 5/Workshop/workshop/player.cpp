@@ -11,6 +11,8 @@ void Player::showInventory() const {
     }
 }
 
+
+
 bool Player::hasItem(const std::string& item) const {
     return std::find(inventory.begin(), inventory.end(), item) != inventory.end();
 }
@@ -31,7 +33,7 @@ void Player::pickUp(const std::string& item) {
 void Player::showAsciiArt() {
     std::cout << R"(
 
-         [Robot Zorgassistent]
+         [Escape room deelnemer (slaaf)]
              .-"""-.
             / .===. \
             \/ 6 6 \/
